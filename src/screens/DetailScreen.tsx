@@ -8,18 +8,20 @@ import {
 	Dimensions,
 	ScrollView,
 	ActivityIndicator,
+	TouchableOpacity,
 } from 'react-native'
 import { RootStackParams } from '../navigation/Navigation'
 
 import { useMovieDetails } from '../hooks/useMovieDetails'
 import { MovieDetails } from '../components/MovieDetails'
+import { Ionicons } from '@expo/vector-icons'
 
 const screenHeigth = Dimensions.get('screen').height
 
 interface Props
 	extends NativeStackScreenProps<RootStackParams, 'DetailScreen'> {}
 
-export const DetailScreen = ({ route }: Props) => {
+export const DetailScreen = ({ route, navigation }: Props) => {
 	const movie = route.params
 
 	const uri = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
@@ -48,6 +50,14 @@ export const DetailScreen = ({ route }: Props) => {
 			) : (
 				<MovieDetails movieFull={movieFull} cast={cast} />
 			)}
+
+			{/* Boton cerrar */}
+			<TouchableOpacity
+				style={styles.backButtom}
+				onPress={() => navigation.pop()}
+			>
+				<Ionicons name='arrow-back-outline' size={60} color='white' />
+			</TouchableOpacity>
 		</ScrollView>
 	)
 }
@@ -88,5 +98,12 @@ const styles = StyleSheet.create({
 	title: {
 		fontSize: 20,
 		fontWeight: 'bold',
+	},
+	backButtom: {
+		position: 'absolute',
+		zIndex: 999,
+		elevation: 9,
+		top: 30,
+		left: 5,
 	},
 })
