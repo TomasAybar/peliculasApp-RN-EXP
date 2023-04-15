@@ -1,11 +1,12 @@
-import axios from 'axios'
+import axios from "axios";
+import { API_KEY, API_URI } from "../config/config";
 
 const movieDB = axios.create({
-	baseURL: 'https://api.themoviedb.org/3/movie',
-	params: {
-		api_key: 'da105d94ec008192c58e8fcad8b05171',
-		language: 'es-ES',
-	},
-})
+  baseURL: API_URI,
+  params: {
+    api_key: API_KEY,
+    language: "es-ES",
+  },
+});
 
-export default movieDB
+export default movieDB;
