@@ -1,36 +1,59 @@
-# TypeScript Example
+# PeliculasApp
 
-<p>
-  <!-- iOS -->
-  <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  <!-- Android -->
-  <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  <!-- Web -->
-  <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-</p>
+## [Download APK HERE](https://tomas-aybar.vercel.app/)
 
-```sh
-npx create-react-native-app -t with-typescript
-```
+![](/github/peliculasApp.gif) 
 
-TypeScript is a superset of JavaScript which gives you static types and powerful tooling in Visual Studio Code including autocompletion and useful inline warnings for type errors.
+---
 
-## 🚀 How to use
+## 📖 Table of Contents
 
-#### Creating a new project
+- [Project Description](#project-description)
+- [Technologies](#technologies)
+- [Features](#features)
+- [Status](#status)
+- [Inspiration](#inspiration)
 
-- Install the CLI: `npm i -g expo-cli`
-- Create a project: `npx create-react-native-app -t with-typescript`
-- `cd` into the project
+<br />
 
-### Adding TypeScript to existing projects
+## ✏️ Project Description
 
-- Create a blank TypeScript config: `touch tsconfig.json`
-- Run `yarn start` or `npm run start` to automatically configure TypeScript
-- Rename files to TypeScript, `.tsx` for React components and `.ts` for plain typescript files
+PeliculasApp is an application to visualize movies, as if it were a cinema billboard, to put into practice react-native concepts taken from an Udemy course.
 
-> 💡 You can disable the TypeScript setup in Expo CLI with the environment variable `EXPO_NO_TYPESCRIPT_SETUP=1 expo start`
+<br />
 
-## 📝 Notes
+## 🖥️ Technologies
 
-- [Expo TypeScript guide](https://docs.expo.dev/versions/latest/guides/typescript/)
+- ### Typescript;
+
+- ### React-Native;
+
+- ### Expo;
+
+- ### Axios:
+
+  I used Axios to consume TMDB API.
+
+<br />
+
+## 🥇 Features
+
+The user can:
+- Search movies;
+- View movie information;
+
+<br />
+
+## ⏱️ Status
+
+This project is finished ???
+
+<br />
+
+## 💡 Inspiration
+
+PeliculasApp is created to implement new concepts of react-native, API consumption, typescript, etc. 😎
+
+---
+
+Made by Tomás Aybar 👋 [See my LinkedIn](https://www.linkedin.com/in/tomasaybar/)
